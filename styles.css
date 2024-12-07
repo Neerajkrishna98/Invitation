@@ -120,7 +120,51 @@ button:hover {
   background-color: rgba(255, 255, 255, 0.1); /* Slight background color change */
 }
 
+
 /* Focus state */
 button:focus {
   outline: none;
 }
+
+.rsvp-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  color: white;
+}
+
+.rsvp-container h2 {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  text-align: center;
+}
+
+.rsvp-container label {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+  display: block;
+}
+
+.rsvp-container input, .rsvp-container select, .rsvp-container button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 1rem;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+.rsvp-container button {
+  background-color: #001f4d;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.rsvp-container button:hover {
+  background-color: #002b73;
+}
+
