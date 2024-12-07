@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Invitation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Story Sections wrapped in a text-container for border styling -->
+  <div class="text-container">
+    <div class="story">
+      <h1>Our Journey Begins</h1>
+      <p>From meeting in the college as teenagers, our paths crossed in the most serendipitous way.</p>
+    </div>
+    
+    <div class="story">
+      <h2>The Big Day</h2>
+      <p>We are overjoyed to invite you to our wedding celebration.</p>
+      <p><strong>Date:</strong> March 2, 2025</p>
+      <p><strong>Venue:</strong> Sunshine Gardens, Andhra Pradesh</p>
+    </div>
+
+    <div class="story">
+      <h2>Countdown to Forever</h2>
+      <p>Join us as we begin the next chapter of our lives together.</p>
+      <p id="timer"></p>
+    </div>
+  </div>
+<!-- RSVP Section -->
+<div class="story">
+  <h2>RSVP</h2>
+  <p>Will you be joining us for the celebration?</p>
+  <div class="buttons">
+    <button id="yes-btn">✔ Yes, I’ll be there!</button>
+    <button id="no-btn">✖ No, I can’t make it</button>
+  </div>
+</div>
+
+  <!-- Car Animation -->
+  <div class="car-container">
+    <img src="car.png" alt="Car" class="car">
+  </div>
+
+  <footer>
+    <p>We can't wait to celebrate with you! 💍</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

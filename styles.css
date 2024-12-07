@@ -1,0 +1,126 @@
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #001f4d, #002b73); /* Elegant navy blue gradient */
+  color: white;
+  font-family: 'Cormorant Garamond', serif; /* Royal and elegant font */
+  font-size: 1.2rem;
+  line-height: 1.8;
+  overflow-x: hidden; /* Prevent horizontal scroll caused by car animation */
+}
+
+/* Headings */
+h1, h2 {
+  font-family: 'Playfair Display', serif; /* Another elegant font for headers */
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for royal feel */
+}
+
+/* Add a container for all the text */
+.text-container {
+  border: 3px solid white;  /* Add white border around text */
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.4); /* Slight transparency to blend with the background */
+  border-radius: 10px; /* Rounded corners for a soft, elegant look */
+}
+
+/* Story Sections */
+.story {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Section Breaks */
+.story:not(:last-child) {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Subtle divider */
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+
+/* Car Styling */
+.car-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.car {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 150px;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.2); /* Semi-transparent footer */
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar {
+  width: 15px; /* Adjust width for aesthetics */
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #003366, #006699); /* Add a gradient */
+  border-radius: 10px; /* Rounded edges */
+  border: 1px solid #4c9ff3; /* Adds a border for contrast */
+}
+
+/* Scrollbar thumb hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #006699, #003366); /* Reverse gradient on hover */
+}
+
+/* Scrollbar corner for horizontal+vertical scrollbars */
+::-webkit-scrollbar-corner {
+  background: #003366;
+}
+
+
+/* Styling for Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+button {
+  font-family: 'Playfair Display', serif;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: 2px solid #ffffff; /* White border */
+  background-color: transparent; /* Transparent background */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover effects */
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.5); /* Lighter shadow on hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Slight background color change */
+}
+
+/* Focus state */
+button:focus {
+  outline: none;
+}
