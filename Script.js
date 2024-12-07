@@ -25,6 +25,8 @@ const countdownTimer = setInterval(() => {
   const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
+  console.log(`${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`); // Debugging line
+
   // Update the timer display
   document.getElementById("timer").innerHTML = `
     ${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds
@@ -36,6 +38,7 @@ const countdownTimer = setInterval(() => {
     document.getElementById("timer").innerHTML = "🎉 Happily Ever After! 🎉";
   }
 }, 1000); // Update every second
+
 
 document.getElementById('yes-btn').addEventListener('click', function() {
   alert('Yay! We can\'t wait to see you at the wedding! 🎉');
